@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    padding: 20px;
+    background-color: #030117; /* Optional: Set a different background color for the rest of the page */
+}
+
+/* Stretch image and blend it nicely with background */
+
+.image-container {
+    width: 100%; /* Full width of the container */
+    max-height: 500px; /* Adjust this height as needed */
+    overflow: hidden; /* Hide any overflow */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+}
+
+/* Ensure the image scales to fit the container width */
+.styled-image {
+    width: 100%; /* Make the image stretch across the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container with the image */
+}
+
+
+
+ul.navigation {
+    list-style-type: none;
+    padding: 0;
+    margin: 30px auto; 
+    background-color: transparent; 
+    border-radius: 10px; 
+    width: fit-content; 
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    gap: 25px;
+}
+
+ul.navigation a {
+    display: block;
+    padding: 20px; 
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    font-size: 20px;
+    border-bottom: 2px solid #fffefe; 
+    transition: transform 0.3s ease, background 0.3s ease;  
+}
+
+ul.navigation a:hover {
+    background-color: #b2b2b3;
+    transform: scale(1.1); /* Slightly scale the link on hover */
+    color: #000000; /* Change color to black on hover */
+}
+
+
+/* GoEurope Summary Section Styling */
+.summary-text {
+    padding: 20px;
+    color: #ffffff; /* Make the text white to stand out on the dark background */
+    background-color: rgb(4, 2, 29); /* Slightly darker background for the text section */
+    margin: 40px auto; /* Add more margin to the top for spacing */
+    max-width: 800px;
+    text-align: center;
+    position: relative; /* Ensures proper placement below the image */
+    z-index: 1; /* Ensures the text appears on top of other elements */
+}
+
+.summary-text h1 {
+    margin-bottom: 15px;
+}
+
+.summary-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Section with Image and Text Overlay */
+.image-text-section {
+    margin: 100px 0;
+    position: bottom;
+    text-align: center;
+}
+
+.image-with-text {
+    position: relative;
+    width: 100%;
+    max-height: 400px; /* Adjust the height as needed */
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 600px; /* Keep height consistent */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better text visibility */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.text-overlay h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.text-overlay p {
+    font-size: 30px;
+}
